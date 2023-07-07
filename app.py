@@ -77,9 +77,8 @@ def make_frontend(
     return frontend
 
 def main():
-    lambda_url_local = "http://localhost:8080/2015-03-31/functions/function/invocations"
-    #lambda_url = "https://8v5guzn66c.execute-api.ap-southeast-2.amazonaws.com/test"
-    predictor = PredictorBackend(url=lambda_url_local)
+    #lambda_url_local = "http://localhost:8080/2015-03-31/functions/function/invocations"
+    predictor = PredictorBackend(url=None)
     frontend = make_frontend(
         predictor.run,
     )
