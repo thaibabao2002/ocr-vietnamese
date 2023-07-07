@@ -12,38 +12,25 @@
 
 ### About Project <a name="about-project"></a>
 -
-### Project Structure
-Ocr-Vietnamese
-│   backbone.py                   # Model configuration
-|   export.py                     # UPDATED 10/2022: onnx weight with accompanying .npy anchors
-│   hubconf.py                    # Pytorch Hub entrypoint
-│   hybridnets_test.py            # Image inference
-│   hybridnets_test_videos.py     # Video inference
-│   train.py                      # Train script
-│   train_ddp.py                  # DistributedDataParallel training (Multi GPUs)
-│   val.py                        # Validate script
-│   val_ddp.py                    # DistributedDataParralel validating (Multi GPUs)
-│
-├───encoders                      # https://github.com/qubvel/segmentation_models.pytorch/tree/master/segmentation_models_pytorch/encoders
-│       ...
-│
-├───hybridnets
-│       autoanchor.py             # Generate new anchors by k-means
-│       dataset.py                # BDD100K dataset
-│       loss.py                   # Focal, tversky (dice)
-│       model.py                  # Model blocks
-│
-├───projects
-│       bdd100k.yml               # Project configuration
-│
-├───ros                           # C++ ROS Package for path planning
-│       ...
-│
-└───utils
-    |   constants.py
-    │   plot.py                   # Draw bounding box
-    │   smp_metrics.py            # https://github.com/qubvel/segmentation_models.pytorch/blob/master/segmentation_models_pytorch/metrics/functional.py
-    │   utils.py                  # Various helper functions (preprocess, postprocess, eval...)
+### Detail 
+
+Ocr-Vietnamese \
+  | `OCR_VN:` \
+  | ----- `predict.py`: Take input and return result \
+  | ----- `utils.py`: Auxiliary function for file predict \
+  | `Images`: Image  \
+  | `Models:` \
+  | +) `det_onnx` : Model Detection \
+  | ----- `model_det.onxx` \
+  | +) `rec_onnx` : Model Recognition  \
+  | ----- `model_rec.onxx` \
+  | ----- `model_strdent.onxx` \
+  | `Serverless`: AWS Lamda \
+  | ----- `lambda_function.py` \
+  | ----- `test_lambda.py` \
+  | `app.py`: Gradio \
+  | `requirements.txt`: Libraries to download  \
+    
 ### Getting Started <a name="getting-started"></a>
 - Installation<a name = "installation"></a> :
     + Requirments.txt
