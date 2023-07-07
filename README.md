@@ -6,12 +6,11 @@
   2. [Detail](#detail)
   3. [Getting Started](#getting-started)
      - [Installation](#installation)
-  4. [Structure](#structure)
-  5. [Train model](#trainmodel)
-  6. [Inference ( Convert ONNX)](#infer)
-  7. [Build and run docker](#build)
-  8. [Using AWS Lamda for backend severless and  connect to gradio frontend ](#using)
-  9. [Results](#results)
+  4. [Train model](#trainmodel)
+  5. [Inference ( Convert ONNX)](#infer)
+  6. [Build and run docker](#build)
+  7. [Using AWS Lamda for backend severless and  connect to gradio frontend ](#using)
+  8. [Results](#results)
 
 </details>
 
@@ -44,7 +43,6 @@ Ocr-Vietnamese \
 - Installation<a name = "installation"></a> :
     + conda create -n <name-of-env> python==3.10
     + pip install -r requirements.txt
-### Structure <a name="structure"></a>
 ### Train model <a name="trainmodel"></a>
   1. Text Detection :
   2. Text Recognition :
