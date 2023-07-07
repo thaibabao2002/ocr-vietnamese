@@ -16,7 +16,9 @@
 </details>
 
 ### About Project <a name="about-project"></a>
--
+We developed an OCR project specifically designed for the Vietnamese language, following the MLOps process. Initially, we utilized the open-source paddleOCR and conducted testing on various models to ensure effective text detection and recognition. Throughout the training phase, we employed WandB to monitor parameters and preserve artifacts for the models at each step. Upon completion of model training, we selected the PPOCR_v3 model, which strikes a balance between accuracy and inference time for both text detection and recognition. Subsequently, we converted the two models to the ONNX format and packaged them together in a Docker image, which was then uploaded to AWS ECR for storage. We fetched the Docker image from ECR and deployed it on AWS Lambda, leveraging API Gateway to create an API for end users. This API is seamlessly connected to the Gradio Frontend, enabling users to receive the desired results.
+![image](https://github.com/thaibabao2002/ocr-vietnamese/assets/76588198/6af57fb8-fb94-4c2a-9417-1b7846b0c22d)
+
 ### Detail <a name="detail"></a>
 
 Ocr-Vietnamese \
