@@ -42,7 +42,8 @@ Ocr-Vietnamese \
     
 ### Getting Started <a name="getting-started"></a>
 - Installation<a name = "installation"></a> :
-    + Requirments.txt
+    + conda create -n <name-of-env> python==3.10
+    + pip install -r requirements.txt
 ### Structure <a name="structure"></a>
 ### Train model <a name="trainmodel"></a>
   1. Text Detection :
