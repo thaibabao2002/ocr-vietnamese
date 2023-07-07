@@ -29,7 +29,6 @@ Ocr-Vietnamese \
   | ----- `model_det.onxx` \
   | +) `rec_onnx` : Model Recognition  \
   | ----- `model_rec.onxx` \
-  | ----- `model_strdent.onxx` \
   | `Serverless`: AWS Lamda \
   | ----- `lambda_function.py` \
   | ----- `test_lambda.py` \
